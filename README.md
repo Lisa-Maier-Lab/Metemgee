@@ -12,7 +12,6 @@ The notebooks walk you through the download of the software, the
 creation of files and the execution of the pipelines.
 
 ## Requirements for Running the Notebooks
-
 ### Jupyter Notebook
 To successfully execute the notebooks in this repository, you 
 will need to have Jupyter Notebook installed on your system. 
