@@ -1,2 +1,3 @@
-# Output dirs
+# Ignore dirs
+bin/
 data/
