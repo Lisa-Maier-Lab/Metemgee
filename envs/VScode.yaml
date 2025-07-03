@@ -1,0 +1,9 @@
+name: VScode
+channels:
+  - conda-forge
+dependencies:
+  - python=3.9
+  - ipykernel
+  - jupyter
+  - r-essentials
+  - r-irkernel

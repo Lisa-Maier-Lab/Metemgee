@@ -6,7 +6,10 @@ Jacobo de la Cuesta-Zuluaga. August 2024.
 functional profiles of the Maier Lab. For functional profiles,
 it implements the `nf-core` pipeline `taxprofiler` available
 [here](https://nf-co.re/taxprofiler). For functional profiling,
-it uses `mifaser`, found [here](https://bitbucket.org/bromberglab/mifaser).
+it uses `mifaser`, found [here](https://bitbucket.org/bromberglab/mifaser),
+`paladin`, available [here](https://github.com/ToniWestbrook/paladin).
+Alternatively, you can use an assembly-dependant method with the
+`nf-core` pipeline `metadenovo`, found [here](https://nf-co.re/metatdenovo/1.2.0)
 
 The notebooks walk you through the download of the software, the
 creation of files and the execution of the pipelines.
@@ -27,16 +30,34 @@ You can run Jupyter Notebooks in two ways:
     and run notebooks directly from your local environment.
 
 ### Conda
-In addition to Jupyter Notebook, you will need to have the 
+In addition to Jupyter Notebooks, you will need to have the 
 ability to create and manage Conda environments. Conda is a 
 package and environment management system that allows you to 
 install dependencies and manage different project environments
 easily.
 
-### IRkernel
+If you are using this notebook on the M3 HPC you should have
+the ability to create Conda environments. 
 
-To execute R notebooks, you must also have the IRkernel available
-in the Conda environment you create to run the notebooks. 
+To create the VScode conda environment from the provided YAML file,
+run the following command in your terminal:
+
+```bash
+conda env create -f envs/VScode.yaml
+```
+
+This command will set up a new environment with all the specified packages.
+You only need to create the environment once.
+
+To activate the environment after creation, use:
+
+```bash
+conda activate VScode
+```
+
+YAML files for other Conda environments necessary to execute the pipelines
+are provided in the `/envs` folder. They are created and activated in a similar
+way described above.
 
 ## Why `Metemgee`?
 I was trying to come up with a clever name for this repo and it
