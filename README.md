@@ -56,7 +56,7 @@ conda activate VScode
 ```
 
 YAML files for other Conda environments necessary to execute the pipelines
-are provided in the `/envs` folder. They are created and activated in a similar
+are provided in the `./envs` folder. They are created and activated in a similar
 way described above.
 
 ## Why `Metemgee`?
